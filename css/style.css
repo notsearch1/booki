@@ -231,10 +231,10 @@ a{
 }
 .titre-carte{
     margin:5px;
-    font-size: 12px;
+    font-size: 13px;
 }
 .carte p, .carte-populaire p{
-    font-size: 10px;
+    font-size: 12px;
     margin:5px 5px 2px 5px;
 }
 .star-line{
@@ -271,7 +271,7 @@ a{
     display:inline-flex;
 }
 .text-container{
-    padding:15px;
+    padding:10px;
     display:flex;
     flex-direction: column;
 }
@@ -382,15 +382,12 @@ footer{
     width: 100%;
     }
 
+
 }
 
 
 /* FORMAT TABLETTE */
-@media (min-width:768px) and (max-width:992px){
-    *{
-        font-size: 15px;
-    }
-    
+@media (min-width:767px) and (max-width:992px){  
     /* header */
     #logo img{
         height: 50%;
@@ -418,20 +415,10 @@ footer{
    .hebergements-container{
     flex-direction: column-reverse;
     }
-   #ville{
-       width: 100%;
-   }
    
-   #populaire{
-       width: 100%;   
-   }
-
-   #card-hebergement-container{
-       justify-content: initial;
-   }
-   .carte{
-       width: 80%;
-   }
+    .img-carte-populaire{
+        width: 200px;
+    }
 
    /* activité */
    #activites-section h2{
@@ -442,7 +429,7 @@ footer{
         flex-direction: row;
         flex-wrap: wrap;
         height: auto;
-    max-width: 100vw;
+        max-width: 100vw;
     }
 
     .activites-card-1, .activites-card-2, .activites-card-3{
@@ -467,14 +454,6 @@ footer{
 /* FORMAT SMARTPHONE */
 @media (max-width:767px) {
     /* général */
-    *{
-        font-size: 15px;
-    }
-
-    body{
-        padding:0;
-    }
-
     main{
         margin:30px 0;
     }
